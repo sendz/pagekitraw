@@ -1,0 +1,21 @@
+{
+    "name": "pagekit/cookie",
+    "type": "library",
+    "description": "Pagekit Cookie Component",
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/http-foundation": "2.4.*"
+    },
+    "autoload": {
+        "psr-0": { "Pagekit\\Component\\Cookie\\": "" }
+    },
+    "target-dir": "Pagekit/Component/Cookie",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "pagekit/routing",
+    "type": "library",
+    "description": "Pagekit Routing Component",
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/annotations": "1.*",
+        "pagekit/file": "1.*",
+        "pagekit/filter": "1.*",
+        "symfony/http-kernel": "2.4.*"
+    },
+    "autoload": {
+        "psr-0": { "Pagekit\\Component\\Routing\\": "" }
+    },
+    "target-dir": "Pagekit/Component/Routing",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

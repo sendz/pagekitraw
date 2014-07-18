@@ -1,0 +1,26 @@
+{
+    "name": "pagekit/mail",
+    "type": "library",
+    "description": "Pagekit Mail Component",
+    "keywords": ["pagekit", "mail"],
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "authors": [],
+    "require": {
+        "php": ">=5.3.3",
+        "swiftmailer/swiftmailer": "4.2.*"
+    },
+    "suggest": {
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-0": { "Pagekit\\Component\\Mail\\": "" }
+    },
+    "target-dir": "Pagekit/Component/Mail",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

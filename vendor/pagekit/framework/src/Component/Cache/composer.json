@@ -1,0 +1,21 @@
+{
+    "name": "pagekit/cache",
+    "type": "library",
+    "description": "Pagekit Cache Component",
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/cache": "1.*"
+    },
+    "autoload": {
+        "psr-0": { "Pagekit\\Component\\Cache\\": "" }
+    },
+    "target-dir": "Pagekit/Component/Cache",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

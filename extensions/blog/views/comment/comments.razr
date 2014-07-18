@@ -1,0 +1,19 @@
+@script('blog.post-comments', 'extension://blog/assets/js/comment/post.js', 'jquery')
+
+<div class="js-comments uk-margin">
+
+    <h2 class="uk-h3">@trans('Comments (%count%)', ['%count%' => $post.commentCount])</h2>
+
+    <ul class="uk-comment-list">
+
+        @foreach ($post.commentsTree as $child)
+        @include('extension://blog/views/comment/comment.razr', ['node' => $child, 'comment' => $child.comment])
+        @endforeach
+
+    </ul>
+
+    @if ($post.commentStatus)
+    @include('extension://blog/views/comment/respond.razr')
+    @endif
+
+</div>

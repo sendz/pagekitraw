@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+        <title>Razr Templating Example</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.1.0/css/uikit.almost-flat.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.1.0/fonts/fontawesome-webfont.eot"></script>
+    </head>
+    <body class="uk-container uk-container-center uk-margin-top">
+
+        <h1>Variables</h1>
+
+        <!-- access object attributes with dot notation -->
+        <h2>@( $object.title )</h2>
+        <p>by @( $object.artist.name ), @( $object.artist.homepage )</p>
+
+        <!-- access array attributes with dot or array notation -->
+        <h2>@( $array.title )</h2>
+        <p>by @( $array.artist.name ), @( $array['artist']['homepage'] )</p>
+
+        <hr>
+
+        <h1>Functions</h1>
+
+        <!-- constant('Namespace\Classname::NAME') or constant('NAME', object) -->
+        <p>@( constant('Article::NAME') )</p>
+        <p>@( constant('NAME', $article) )</p>
+
+        <!-- include((string) template, (array) params) -->
+        <p>@include('partial.razr', ['param' => 'parameter'])</p>
+
+        <!-- include with blocks -->
+        <p>@include('child.razr', ['param' => 'parameter'])</p>
+
+        <hr>
+
+        <h1>Example</h1>
+
+        <article>
+            <h2>@( $article.title )</h2>
+            <p>Written by @( $article.author )</p>
+            <p>@( $article.content )</p>
+        </article>
+
+    </body>
+</html>

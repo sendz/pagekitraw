@@ -1,0 +1,21 @@
+{
+    "name": "pagekit/markdown",
+    "type": "library",
+    "description": "PHP Markdown parser and compiler",
+    "keywords": ["markdown", "parser"],
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pagekit",
+            "email": "info@pagekit.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Pagekit\\Component\\Markdown\\": "" }
+    },
+    "minimum-stability": "dev"
+}

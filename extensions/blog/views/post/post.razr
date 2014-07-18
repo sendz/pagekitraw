@@ -1,0 +1,9 @@
+<article class="uk-article">
+
+    <h1 class="uk-article-title">@( $post.title )</h1>
+
+    <div>@raw( $post.content )</div>
+
+    @include('extension://blog/views/comment/comments.razr')
+
+</article>

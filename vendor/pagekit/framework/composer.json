@@ -1,0 +1,36 @@
+{
+    "name": "pagekit/framework",
+    "description": "Pagekit Framework",
+    "keywords": ["framework"],
+    "homepage": "http://pagekit.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pagekit",
+            "email": "info@pagekit.com"
+        }
+    ],
+    "require": {
+        "doctrine/annotations": "1.*",
+        "doctrine/dbal": "2.4.*",
+        "guzzlehttp/guzzle": "4.*",
+        "ircmaxell/password-compat": "1.0.*",
+        "ircmaxell/random-lib": "1.0.*",
+        "mibe/feedwriter": "dev-master",
+        "nikic/php-parser": "1.*",
+        "pimple/pimple": "2.0.*",
+        "swiftmailer/swiftmailer": "5.*",
+        "symfony/console": "2.5.*",
+        "symfony/finder": "2.5.*",
+        "symfony/http-foundation": "2.5.*",
+        "symfony/http-kernel": "2.5.*",
+        "symfony/routing": "2.5.*",
+        "symfony/stopwatch": "2.5.*",
+        "symfony/templating": "2.5.*",
+        "symfony/translation": "2.5.*"
+    },
+    "autoload": {
+        "psr-4": { "Pagekit\\": "src" }
+    },
+    "minimum-stability": "dev"
+}

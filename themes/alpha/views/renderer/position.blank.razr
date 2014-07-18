@@ -1,0 +1,3 @@
+@foreach ($value as $widget)
+    @raw( $options.provider.render($widget, $options) )
+@endforeach
